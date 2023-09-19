@@ -62,7 +62,7 @@ html {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
+  margin: var(--header-height) 20px 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -482,6 +482,30 @@ body.dark-theme {
   }
 }
 
+@media screen and (min-width: 360px) {
+  .svg__img {
+    width: 100%;
+  }
+  .section {
+    padding: 3.5rem 0 1rem;
+  }
+  .services__img {
+    width: 250px;
+    height: 200px;
+  }
+  .app__buttons {
+    grid-template-columns: max-content;
+  }
+  .services__data {
+    width: 93% !important;
+  }
+  .scrollup {
+    right: 2rem;
+  }
+  .nav__toggle {
+    margin: 5px;
+  }
+}
 /* For medium devices */
 @media screen and (min-width: 576px) {
   .svg__img {
